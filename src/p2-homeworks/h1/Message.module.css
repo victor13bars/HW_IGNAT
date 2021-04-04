@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.homework {
+    text-align: center;
+}
+
+.message {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 50px;
+    background-color: yellow;
+    border-radius: 20px;
+    border: 2px solid lightgrey;
+
+}
+
+.alt_mess {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 130px;
+    background-color: yellow;
+    border-radius: 20px;
+    border: 2px solid lightgrey;
+}
+
+.avatar {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid deeppink;
+}
+
+.message_content {
+    width: 370px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 90px 0;
+    border: 1px solid blue;
+}
+
+.message_body {
+    width: 400px;
+    margin-left: 60px;
+}
+
+.user_name {
+    font-weight: 700;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 60px;
+    color: red;
+    font-weight: 600;
+}
+

@@ -1,0 +1,18 @@
+.column
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.label
+{
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-top: 10px;
+    margin-right: 110px;
+
+    text-align: center;
+}
+
+
