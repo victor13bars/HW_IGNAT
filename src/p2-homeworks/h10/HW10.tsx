@@ -4,12 +4,14 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC} from "./bll/loadingReducer";
 import {CircularProgress} from "@material-ui/core";
-import s from "./HW10.module.css"
+import s from "./../h12/HW12.module.css"
+import {themeType} from "../h12/bll/themeReducer";
 
 function HW10() {
     // useSelector, useDispatch
     const dispatch = useDispatch()
     const loading = useSelector((state: AppStoreType) => state.loading.loading);
+    const theme = useSelector<AppStoreType, themeType>((state) => state.theme.theme)
 
     const setLoading = () => {
         dispatch(loadingAC(true))
@@ -20,8 +22,10 @@ function HW10() {
     };
 
     return (
-        <div className={s.column}>
-            <h1>homeworks 10</h1>
+        <div className={s[theme] + ' ' + s.column}>
+            <span className={s[theme + '-text']}>
+                homeworks 10
+            </span>
 
             {/*should work (должно работать)*/}
             {loading

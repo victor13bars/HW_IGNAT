@@ -17,13 +17,15 @@ label {
     font-size: 24px;
     font-weight: 500;
 }
-input{
+
+input {
     background-color: orangered;
+    color: green;
 }
 
 
-hr{
+hr {
     width: 1583px;
-    height:1px;
-    background:#FFFF00;
+    height: 1px;
+    background: #FFFF00;
 }

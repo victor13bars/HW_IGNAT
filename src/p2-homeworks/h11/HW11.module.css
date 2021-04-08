@@ -4,11 +4,6 @@
     align-items: center;
 }
 
-span {
-    color: blue;
-    font-size:20px;
-}
-
 .defaultPlus {
     font-size: 15px;
     font-weight: 300;
