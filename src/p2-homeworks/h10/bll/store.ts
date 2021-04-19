@@ -1,14 +1,17 @@
 import {loadingReducer} from "./loadingReducer";
-import {combineReducers, createStore, Store} from "redux";
+import {combineReducers, createStore, Store, applyMiddleware} from "redux";
 import {themeReducer} from "../../h12/bll/themeReducer";
+import {authReducer} from "../../h13/authReducer";
+import thunkMiddleware from 'redux-thunk'
 
 const reducers = combineReducers({
     loading: loadingReducer,
-    theme:themeReducer
+    theme:themeReducer,
+    auth:authReducer
 
 });
 
-const store: Store = createStore(reducers);
+const store: Store = createStore(reducers,applyMiddleware(thunkMiddleware));
 
 export default store
 
